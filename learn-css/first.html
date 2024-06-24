@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <link rel="stylesheet" href="first.css">
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+
+        }
+        .Box{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            background-color: chocolate;
+        }
+
+        div{
+
+            height: 60px;
+            width: 60px;
+            background-color: brown;
+            margin: 20px;
+            border: 5px solid black;
+
+
+        }
+        #div1{
+            position: static;
+        }
+        #div2{
+            position: relative;
+            top: 100px;
+            left: 70px;
+        }
+        #div3{
+            position: absolute;
+            top: 150px;
+            left: 50px;
+        }
+        #div4{
+            position: fixed;
+            top: 250px;
+            left: 80px;
+        }
+        
+           
+        
+    </style>
+</head>
+<body>
+
+    <div id="div1" class="Box">Static</div>
+    <div id="div2" class="Box">Relative</div>
+
+    <div id="div3"class="Box">Absolute</div>
+    <div id="div4" class="Box">Fixed..</div>
+
+
+    
+</body>
+</html>

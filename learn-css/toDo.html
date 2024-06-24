@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Project</title>
+</head>
+    <style>
+    
+        .heading{
+            text-align: center;
+        }
+        .grid-container{
+        display: grid;
+        grid-template-columns: 200px 140px 120px;
+        column-gap: 10px;
+        row-gap: 5px;
+        margin-top: 6px;
+
+        font-weight: 540;
+       
+       
+        }
+        #todo-input{
+            font-size: medium;
+            padding: 7px 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .del-button{
+            background-color:rgb(77, 19, 19) ;
+            color: rgb(196, 215, 215);
+            border-radius: 10px;
+        }
+        .add-button{
+            background-color:rgb(23, 96, 57) ;
+            color: rgb(193, 212, 212);
+            border-radius: 10px;
+        }
+        
+    </style>
+<body>
+
+    <h2 class="heading">Todo App Info</h2>
+  
+   <div class="center">
+    <div class="grid-container">
+        <input id="todo-input" type="text" placeholder="Enter to-do here">
+        <input id="todoDate" type="date">
+        <button class="add-button" onclick="addTodo();">Add</button>
+        
+    </div>
+    <div class="todo-container grid-container"></div>
+    
+   </div>
+    
+    <script src="toDo.js"></script>
+</body>
+</html>

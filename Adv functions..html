@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adv Functions</title>
+</head>
+<body>
+    <h2>Adv functionss</h2>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let sum=function(a,b){
+            return a+b;
+        }
+        let new_sum=sum;
+        // functions are the first class citizens in js..
+        console.log(new_sum(2,3))
+        console.log(sum(1,2))
+// example of anonymous functionss
+        let sumThreeNum=function(a,b,c,twoSum){
+            let sum1=twoSum(a,b)
+            return twoSum(c,sum1)
+        }
+        console.log(1,2,3,twoSum);
+
+    // Arrow Functions
+    let suumm=(num1,num2)=>{
+        return num1+num2;
+    }
+    console.log(suumm(4,5));
+    // example2
+    let square=(num1)=>{
+        return num1*num1;
+    }
+    console.log(square(num1));
+
+    let squares=num1=> num1*num1;
+    console.log(squares(5));
+
+    // setTimeout executes only once in a programm
+    let alarm=function(){
+        console.log('Its morning wake up and eat some food');//executes after 1.5secs
+    }
+    let timerId= setTimeout(alarm,1500);
+    console.log(`Alarm Settttt for time: ${timerId}`)//it executes firstt
+    clearTimeout(timerId);//clear setTimeout
+
+
+    // setInterval
+    let alarm2=()=>{
+        console.log(`Its snacks time, ${new Date()}`)
+    }
+    let interval=setInterval(alarm2,1000);
+    console.log('Interval set for 1 sec')
+
+    // After 5 sec the interval stops executing
+    setTimeout(()=>clearInterval(interval),5000);
+    </script>
+    
+    
+
+
+</body>
+</html>

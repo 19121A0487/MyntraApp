@@ -1,0 +1,26 @@
+#emojiBlock{
+    font-size: large;
+    
+
+}
+
+    
+#heading{
+    color:chocolate;
+    animation-name: emojiblock;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    background-color: blue;
+}
+@keyframes emojiblock {
+    0%{
+        color: blue;
+        font-size: 20px;
+
+    }
+    12%{
+        background-color: aquamarine;
+        color:blanchedalmond;
+        font-size: 25px;
+    }
+}
